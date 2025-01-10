@@ -4,7 +4,7 @@
 3) take command()
 ''' 
 
-import pyttsx3 # python module
+import pyttsx3 
 import datetime
 import speech_recognition as sr
 import wikipedia
@@ -12,13 +12,11 @@ import webbrowser
 import os
 import smtplib
 
-engine = pyttsx3.init('sapi5') #---->used to take voices as inputs or to use in build windows voices
+engine = pyttsx3.init('sapi5') 
 voices = engine.getProperty('voices')
-# print(voices) #prints the system voices
-# print(voices[0].id) #this is the voice of david whose id is 0
-# print(voices[1].id) #this is the voice of zira whose id is 1
+
 engine.setProperty('voice',voices[0].id)
-# engine.setProperty('voice',voices[1].id)
+
 
 
 
